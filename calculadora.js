@@ -16,9 +16,19 @@ function calcular() {
     var resultado = document.getElementById('resultado').innerHTML;
     if (resultado) {
         if (resultado.startsWith('√')) {
-            var numero = resultado.substring(1); // Remove o símbolo '√'
+            var numero = resultado.substring(1);
             var valorCalculado = Math.sqrt(parseFloat(numero));
             document.getElementById('resultado').innerHTML = valorCalculado;
+        } else if (resultado.includes('^')) {
+            var partes = resultado.split('^');
+            if (partes.length === 2) {
+                var base = parseFloat(partes[0]);
+                var potencia = parseFloat(partes[1]);
+                var valorCalculado = Math.pow(base, potencia);
+                document.getElementById('resultado').innerHTML = valorCalculado;
+            } else {
+                document.getElementById('resultado').innerHTML = "Sintaxe Inválida";
+            }
         } else {
             try {
                 document.getElementById('resultado').innerHTML = eval(resultado);
