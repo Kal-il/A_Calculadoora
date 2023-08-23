@@ -7,6 +7,7 @@ Este é um projeto de uma calculadora simples desenvolvida em HTML, CSS e JavaSc
 - Cálculo de operações matemáticas básicas (+, -, *, /).
 - Cálculo de raiz quadrada (usando o símbolo √ seguido de um número).
 - Cálculo de potência (usando a sintaxe 'base ^ potência').
+- Mudança aleatória de cor de fundo da calculadora.
 
 ## Como Usar
 
