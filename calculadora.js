@@ -41,4 +41,10 @@ function calcular() {
         document.getElementById('resultado').innerHTML = "Nada...";
     }
 }
+function changeColor() {
+    var colors = ['#FF5733', '#33FF7A', '#3377FF', '#FF33E9', '#FFE933'];
+    var randomColor = colors[Math.floor(Math.random() * colors.length)];
+    document.querySelector('.calculadora').style.backgroundColor = randomColor;
+}
+
 ﻿
